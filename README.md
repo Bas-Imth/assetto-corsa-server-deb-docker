@@ -1,4 +1,4 @@
-# Clear Assetto Corsa Server on Debian Docker
+# Clear Assetto Corsa Server on Debian Docker with auto-update
 
 # Install
 
