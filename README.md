@@ -17,7 +17,7 @@ services:
             - 9600:9600
             - 9600:9600/udp
         volumes:
-            - /var/acServer-deb:/Steam/assetto #There will be stored all Assetto Corsa Server data including config and content folder.
+            - /var/acServer-deb:/Steam/assetto # There will be stored all of your Assetto Corsa Server data including config and content folder.
         environment:
             # Remember to disable Steam Guard on your account
             - STEAM_USERNAME="yourSteamUsername"
