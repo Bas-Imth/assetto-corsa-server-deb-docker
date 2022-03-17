@@ -1,11 +1,3 @@
-# Clear Assetto Corsa Server on Debian Docker with auto-update
-
-# Install
-
-Docker image is available under the `lilabyte/assetto-corsa-server-deb-docker` name. You can build this image by yourself or use docker-compose instead.
-
-Docker Compose File:
-```yml
 version: "3"
 
 services:
@@ -29,5 +21,3 @@ services:
       - ACS_UDP_PORT=9600
       - ACS_HTTP_PORT=8081
     restart: unless-stopped
-```
-

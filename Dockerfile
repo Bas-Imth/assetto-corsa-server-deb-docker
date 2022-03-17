@@ -1,8 +1,8 @@
-FROM debian
+FROM debian:stretch
 
 LABEL author="Jakub Michalski (lilabyte.cake@gmail.com, github.com/lilabyte)"
 LABEL description="Deb Docker Image for Assetto Corsa Dedicated Server"
-LABEL version="1.0"
+LABEL version="1.1"
 
 # Remember to disable Steam Guard on your account
 ENV STEAM_USERNAME="your_steam_username"
@@ -21,6 +21,6 @@ RUN dpkg --add-architecture i386 && \
     mkdir /Steam && \
     cd /Steam
 
-ADD acs_scripts/ /usr/local/bin
+COPY acs_scripts/* /usr/local/bin/
 
-ENTRYPOINT ["acs_entry.sh"]
+ENTRYPOINT ["/usr/local/bin/acs_entry.sh"]
